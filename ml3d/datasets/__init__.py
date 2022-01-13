@@ -22,10 +22,12 @@ from .scannet import Scannet
 from .sunrgbd import SunRGBD
 from .matterport_objects import MatterportObjects
 
+from .rellis import Rellis
+
 __all__ = [
     'SemanticKITTI', 'S3DIS', 'Toronto3D', 'ParisLille3D', 'Semantic3D',
     'Custom3D', 'utils', 'augment', 'samplers', 'KITTI', 'Waymo', 'NuScenes',
     'Lyft', 'ShapeNet', 'SemSegRandomSampler', 'InferenceDummySplit',
     'SemSegSpatiallyRegularSampler', 'Argoverse', 'Scannet', 'SunRGBD',
-    'MatterportObjects'
+    'MatterportObjects', 'Rellis'
 ]

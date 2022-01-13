@@ -397,6 +397,8 @@ class Visualizer:
         def get_colors(self):
             """Returns a list of label keys."""
             return [
+                # self._label2color[label] for label in sorted(self._label2color.keys())
+
                 self._label2color[label] for label in self._label2color.keys()
             ]
 
@@ -407,6 +409,7 @@ class Visualizer:
             """Updates the labels based on look-up table passsed."""
             self.widget.clear()
             root = self.widget.get_root_item()
+            # for key in sorted(labellut.labels.keys()):
             for key in labellut.labels.keys():
                 lbl = labellut.labels[key]
                 color = lbl.color
@@ -1568,11 +1571,12 @@ class Visualizer:
             dataset: The dataset to use for visualization.
             split: The dataset split to be used, such as 'training'
             indices: An iterable with a subset of the data points to visualize, such as [0,2,3,4].
-            width: The width of the visualization window.
+            width: The width of the visualization windo.
             height: The height of the visualization window.
         """
         # Setup the labels
         lut = LabelLUT()
+        # for val in sorted(dataset.label_to_names.values()):
         for val in dataset.label_to_names.values():
             lut.add_label(val, val)
         self.set_lut("labels", lut)

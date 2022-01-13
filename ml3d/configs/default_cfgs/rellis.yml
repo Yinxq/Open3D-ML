@@ -1,0 +1,12 @@
+name: Rellis 
+dataset_path: /media/yxq/yxqPassport/study/all_datasets/rellis-3D
+cache_dir: ./logs/cache
+use_cache: false
+class_weights: [447156890, 0, 261005182, 107172982, 22852, 224173, 0, 
+                 		 111345, 2, 479, 10, 554091, 10626325, 1588416, 168764964, 
+                 		 10944799, 3502156, 1493276, 5798200, 3395458]
+test_result_folder: ./test
+test_split: ['00003']
+training_split: ['00000', '00001', '00002']
+validation_split: ['00004']
+all_split: ['00000', '00001', '00002', '00003', '00004']
